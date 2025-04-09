@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.active {
+  @apply underline underline-offset-2 text-stone-200
+}
+
+.main {
+  @apply flex flex-col items-center justify-center p-2 overflow-auto text-stone-100 gap-4
+}
