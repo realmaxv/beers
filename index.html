@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,5 +9,23 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      $(function () {
+        function beerRise() {
+          $(".beer").addClass("fill");
+          $(".head").addClass("active");
+        }
+        function pourBeer() {
+          $(".pour").addClass("pouring");
+          beerRise();
+          setTimeout(function () {
+            $(".pour").addClass("end");
+          }, 1500);
+        }
+        setTimeout(function () {
+          pourBeer();
+        }, 3000);
+      });
+    </script>
   </body>
 </html>

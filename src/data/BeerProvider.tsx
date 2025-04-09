@@ -27,7 +27,6 @@ const BeerProvider = ({ children }: BeerProviderProps) => {
     setSingleRandomBeer(beerData[random]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [beerData]);
-  console.log(singleRandomBeer);
 
   return (
     <beerContext.Provider value={{ beerData, singleRandomBeer }}>
