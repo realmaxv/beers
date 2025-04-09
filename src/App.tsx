@@ -1,11 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import "./App.css";
-
 import HomePage from "./pages/HomePage";
 import { RouterProvider } from "react-router/dom";
-
 import WrongPage from "./pages/WrongPage";
-
 import BeersPage from "./pages/BeersPage";
 import SingleBeer from "./pages/SingleBeer";
 import RootLayout from "./components/RootLayout";
