@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       { path: "/", Component: HomePage },
       { path: "/beers", Component: BeersPage },
       { path: "/beers/beer/:id", Component: SingleBeer },
-      { path: "/beers/beer/rand/:id", Component: RandomBeer },
+      { path: "/beers/beer/random", Component: RandomBeer },
       { path: "*", Component: WrongPage },
     ],
   },
