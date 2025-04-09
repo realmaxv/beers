@@ -22,7 +22,7 @@ const HomePage = () => {
         <a
           className="cursor-pointer"
           href={`/beers/beer/rand/${
-            singleRandomBeer ? singleRandomBeer.name : "wrong"
+            singleRandomBeer ? singleRandomBeer._id : "wrong"
           }`}
         >
           <h2 className="text-stone-800 font-black text-3xl">Random Beer</h2>
